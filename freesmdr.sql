@@ -1,4 +1,4 @@
-
+ CREATE DATABASE database freesmdr;
  CREATE TABLE `freesmdr` (
   `idfreesmdr` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `call_start` datetime DEFAULT NULL,
