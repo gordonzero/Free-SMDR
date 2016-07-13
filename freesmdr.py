@@ -210,8 +210,12 @@ class RecvHandler(BaseRequestHandler):
                             `markup` = '%(markup)s';
                     """ % dictv
                     log.debug(u"Query: " + unicode(q))
-                    cursor.execute(q)
-                    cursor.close()
+                    try:
+                        cursor.execute(q)
+                    except mysql.connector.Error as err:
+                        log.debug(u"Something went wrong: {}".format(err))
+                    finally:
+                        cursor.close()
             
             else:
                 log.error(u"Parse error on line (len " + str(len(vals)) + " vs " + str(len(fieldlist)) + "): " + unicode(line))
