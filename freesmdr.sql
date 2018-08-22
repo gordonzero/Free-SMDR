@@ -12,7 +12,7 @@
   `is_internal` tinyint(1) DEFAULT NULL COMMENT '**BOOL**',
   `call_id` int(10) unsigned DEFAULT NULL,
   `continuation` tinyint(1) DEFAULT NULL COMMENT '**BOOL**',
-  `paty1device` char(5) DEFAULT NULL,
+  `party1device` char(5) DEFAULT NULL,
   `party1name` varchar(255) DEFAULT NULL,
   `party2device` char(5) DEFAULT NULL,
   `party2name` varchar(255) DEFAULT NULL,

@@ -192,7 +192,7 @@ class RecvHandler(BaseRequestHandler):
                             `is_internal` = %(is_internal)d,
                             `call_id` = %(call_id)d,
                             `continuation` = %(continuation)d,
-                            `paty1device` = '%(party1device)s',
+                            `party1device` = '%(party1device)s',
                             `party1name` = '%(party1name)s',
                             `party2device` = '%(party2device)s',
                             `party2name` = '%(party2name)s',
