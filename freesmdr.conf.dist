@@ -1,3 +1,7 @@
+[bind]
+ip = 
+port = 5514
+
 [connection]
 host = localhost
 user = freesmdr
